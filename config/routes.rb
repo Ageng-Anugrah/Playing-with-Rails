@@ -10,5 +10,6 @@ Rails.application.routes.draw do
     end
   end
 
+  get "/articles/new", to: "articles#new"
   resources :articles
 end
