@@ -12,5 +12,7 @@ Rails.application.routes.draw do
 
   get "/articles/new", to: "articles#new"
   get "/articles/edit/:id", to: "articles#edit", as: "edit"
-  resources :articles
+  resources :articles do
+    resources :comments
+  end
 end
