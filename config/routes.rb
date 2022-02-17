@@ -11,5 +11,6 @@ Rails.application.routes.draw do
   end
 
   get "/articles/new", to: "articles#new"
+  get "/articles/edit/:id", to: "articles#edit", as: "edit"
   resources :articles
 end
