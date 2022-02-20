@@ -8,6 +8,7 @@
 for _ in 1..10 do
     Article.create({
         title: Faker::Book.title,
-        body: Faker::Lorem.sentence
+        body: Faker::Lorem.sentence,
+        status: 'public'
     })
 end
