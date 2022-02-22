@@ -1,3 +1,5 @@
+include ActionController::HttpAuthentication::Basic::ControllerMethods
+
 class CommentsController < ApplicationController
     http_basic_authenticate_with name: "tes", password: "secret", only: :destroy
     def create

@@ -1,3 +1,5 @@
+include ActionController::HttpAuthentication::Basic::ControllerMethods
+
 class ArticlesController < ActionController::Base
   http_basic_authenticate_with name: "tes", password: "secret", except: [:index, :show]
   def index
